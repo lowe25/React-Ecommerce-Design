@@ -15,7 +15,7 @@ export const gamingLaptopList = [
   {
     imgLaptop: asusLaptop,
     name: "ASUS ROG Strix G15",
-    cpu: "i7-10750H",
+    cpu: "I7-10750H",
     ram: "8GB DDR4 3200MHz",
     storage:"500 GB PCIe SSD",
     gpu: "Nvidia GeForce 1650Ti",
@@ -24,7 +24,7 @@ export const gamingLaptopList = [
   {
     imgLaptop: asusLaptop,
     name: "ASUS ROG Zephyrus",
-    cpu: "i7-10750H",
+    cpu: "I7-10750H",
     ram: "16GB DDR4 3200MHz",
     storage:"500 GB PCIe SSD",
     gpu: "Nvidia RTX 2070",
@@ -33,7 +33,7 @@ export const gamingLaptopList = [
   {
     imgLaptop: acerLaptop,
     name: "Acer Nitro 5",
-    cpu: "i5 10300H",
+    cpu: "I5 10300H",
     ram: "8GB DDR4 3200MHz",
     storage:"500 GB PCIe SSD",
     gpu: "Nvidia GeForce 1650Ti",
@@ -88,7 +88,7 @@ export const gamingLaptopList = [
   {
     imgLaptop:msiLaptop,
     name: "MSI GE Series GE66 Raider",
-    cpu: "i7 11800H",
+    cpu: "I7 11800H",
     ram: "16GB DDR4 3200MHz",
     storage:"1TB NVMe SSD",
     gpu: "Nvidia RTX 3060",

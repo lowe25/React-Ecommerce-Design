@@ -9,7 +9,7 @@ export const LaptopList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 `;
 export const LaptopBox = styled.div`
   border: 1px solid black;
@@ -46,5 +46,6 @@ export const ButtonContainer = styled.div`
   .btn-viewProd {
     height: 30px;
     width: 120px;
+    cursor:pointer;
   }
 `;
