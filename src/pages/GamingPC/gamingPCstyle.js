@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import {Link} from "react-router-dom";
 export const GamingContainer = styled.div`
   min-height: 664px;
   padding: 20px;
@@ -22,7 +23,8 @@ export const GamingpcBox = styled.div`
 export const ImageContainer = styled.div`
   display: grid;
   justify-content: center;
-  .ryzenUnits {
+  .ryzenUnits,
+.intelUnits {
     height: 230px;
   }
 `;
@@ -51,3 +53,9 @@ gap:10px;
   cursor:pointer;
 }
 `
+
+export const Links = styled(Link)`
+text-decoration:none;
+`
+
+

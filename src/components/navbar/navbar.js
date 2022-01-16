@@ -34,7 +34,7 @@ function Navbar() {
 
       <NavRight>
         <NavMenu>
-          <NavLinks to="/">
+          <NavLinks to="/myAccount">
             <NavList>My Account</NavList>
           </NavLinks>
           <NavLinks to="/cartpage">

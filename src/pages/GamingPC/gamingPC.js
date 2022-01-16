@@ -8,7 +8,8 @@ import {
   GamingpcBox,
   ImageContainer,
   GamingpcSpecs,
-  ButtonContainer
+  ButtonContainer,
+  Links
 } from "./gamingPCstyle";
 
 //Product List
@@ -19,12 +20,14 @@ function gamingPC() {
     <GamingContainer>
       <GamingpcList>
         {gamingPCs.map((item, index) => {
-          return (
+          const cpu = item.tag;
+          if(cpu === "ryzen"){
+            return (
             <GamingpcBox>
               <ImageContainer>
                 <img
                   src={item.imgSrc}
-                  alt="Featured Gaming Build"
+                  alt="Ryzen Gaming Builds"
                   className="ryzenUnits"
                 />
               </ImageContainer>
@@ -37,10 +40,38 @@ function gamingPC() {
               </GamingpcSpecs>
               <ButtonContainer>
                 <input type="button" value="Add to Cart" className="btn-cart"></input>
+                <Links to="/viewProduct">
                 <input type="button" value="View Product" className="btn-prod"></input>
+                </Links>
               </ButtonContainer>
             </GamingpcBox>
           );
+          }else{
+            return (
+            <GamingpcBox>
+              <ImageContainer>
+                <img
+                  src={item.imgSrc}
+                  alt="Intel Gaming Build"
+                  className="intelUnits"
+                />
+              </ImageContainer>
+              <GamingpcSpecs>
+               <ul>
+                 <li>{item.cpu}</li>
+                 <li>{item.ram}</li>
+                 <li>{item.gpu}</li>
+               </ul>
+              </GamingpcSpecs>
+              <ButtonContainer>
+                <input type="button" value="Add to Cart" className="btn-cart"></input>
+                <Links to="/viewProduct1">
+                <input type="button" value="View Product" className="btn-prod"></input>
+                </Links>
+              </ButtonContainer>
+            </GamingpcBox>
+          );
+          }
         })}
       </GamingpcList>
     </GamingContainer>

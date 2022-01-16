@@ -13,7 +13,9 @@ import gamingLaptop from 'pages/GamingLaptops/gamingLaptop';
 import gamingPeriperals from 'pages/GamingPeriperals/gamingPeriperals';
 import CartPage from "pages/CartPage/cartPage";
 import CheckoutPage from "pages/CheckoutPage/checkoutPage";
-import ProductDetails from "pages/ProductDetailsPage/productDetails";
+import ViewRyzen from "pages/ViewProduct/ViewProductRyzen";
+import ViewIntel from "pages/ViewProduct/ViewProductIntel";
+import MyAccount from "pages/MyAccount/myAccount";
 import IntelPage from "pages/BuildPage/intelPage";
 import ryzenPage from  "pages/BuildPage/ryzenBuild";
 
@@ -28,10 +30,13 @@ function App() {
          <Route path="/gamingpc" component={gamingPC} />
          <Route path="/gaminglaptop" component={gamingLaptop} />
          <Route path="/gamingPerip" component={gamingPeriperals} />
+         <Route path="/myAccount" component={MyAccount} />
          <Route path="/checkoutpage" component={CheckoutPage} />
          <Route path="/cartpage" component={CartPage} />
          <Route path="/intelPage" component={IntelPage} />
          <Route path="/ryzenPage" component={ryzenPage} />
+         <Route path="/viewProduct" component={ViewRyzen} />
+         <Route path="/viewProduct1" component={ViewIntel} />
        </Switch>
      </BrowserRouter>
      <Footer />
