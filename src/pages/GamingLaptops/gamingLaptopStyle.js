@@ -1,10 +1,12 @@
 import styled from "styled-components";
-
+import {Link} from "react-router-dom";
 export const GamingLaptopContainer = styled.div`
   min-height: 500px;
   padding: 20px;
 `;
-
+export const Links = styled(Link)`
+text-decoration:none;
+`
 export const LaptopList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, auto);

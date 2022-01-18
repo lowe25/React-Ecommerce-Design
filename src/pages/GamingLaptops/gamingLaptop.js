@@ -5,6 +5,7 @@ import {
   GamingLaptopImage,
   LaptopSpecs,
   ButtonContainer,
+  Links
 } from "./gamingLaptopStyle";
 
 import { gamingLaptopList } from "pages/StoreData/gamingLaptopList";
@@ -37,11 +38,13 @@ function gamingLaptop() {
                     className="btn-addCart"
                     value="Add to Cart"
                   ></input>
-                  <input
+                 <Links to="/viewLaptop">
+                 <input
                     type="button"
                     className="btn-viewProd"
                     value="View Product"
                   ></input>
+                 </Links>
                 </ButtonContainer>
               </LaptopSpecs>
             </LaptopBox>

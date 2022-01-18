@@ -1,40 +1,86 @@
 import {
   LandingContainer,
   StyleLanding,
-  StyleRyzenBuild,
-  StyleIntelBuilds,
+  BuildContainer,
+  BuildList,
+  BuildBox,
+  BuildSpecs,
   StyleButtonDiv,
-  Links
+  Links,
+  BuildImage,
 } from "./Landing.style";
+//Gaming Pc data
+import { gamingPCs } from "pages/StoreData/gamingPc";
+
+//PC Images
+import ryzenPc from "assets/img/ryzenGaming-pc.jpg";
+import intelPc from "assets/img/intelGaming-pc.jpg";
 function Landing() {
   return (
     <>
-    <LandingContainer>
-    <StyleLanding>
-        <h1>Start Your Dream Build With Us!</h1>
-      </StyleLanding>
-
-      <StyleRyzenBuild>
-        <h1>Boost your productivity with our Ryzen PC Builds</h1>
-        <Links to="/ryzenPage">
-        <StyleButtonDiv>
-         <input type="button" className="btn-build" value="View All Ryzen Builds"></input>
-        </StyleButtonDiv>
-        </Links>
-      </StyleRyzenBuild>
-
-      <StyleIntelBuilds>
-        <h1>
-          Enhance your gaming experience with the latest Intel CPU'S View All
-          Intel Builds
-        </h1>
-        <Links to="/intelPage">
-        <StyleButtonDiv>
-        <input type="button" className="btn-build" value="View All Intel Builds"></input>
-        </StyleButtonDiv>
-        </Links>
-      </StyleIntelBuilds>
-    </LandingContainer>
+      <LandingContainer>
+        <StyleLanding>
+          <h1>Start Your Dream Build With Us!</h1>
+        </StyleLanding>
+        <BuildContainer>
+          <BuildList>
+            {gamingPCs.map((item, index) => {
+              const cpu = item.tag;
+              if (cpu === "ryzen") {
+                return (
+                  <BuildBox>
+                    <BuildImage>
+                      <img
+                        src={ryzenPc}
+                        alt="Gaming Pc's"
+                        className="ryzen-img"
+                      ></img>
+                    </BuildImage>
+                    <BuildSpecs>
+                      <ul>
+                        <li>{item.cpu}</li>
+                        <li>{item.ram}</li>
+                        <li>{item.gpu}</li>
+                      </ul>
+                    </BuildSpecs>
+                    <StyleButtonDiv>
+                      <Links to={item.link}>
+                        <input type="button" value="View Build" className="btn-build"></input>
+                      </Links>
+                      <input type="button" value="Add to Cart" className="btn-cart"></input>
+                    </StyleButtonDiv>
+                  </BuildBox>
+                );
+              } else {
+                return (
+                  <BuildBox>
+                    <BuildImage>
+                      <img
+                        src={intelPc}
+                        alt="Gaming Pc's"
+                        className="intel-img"
+                      ></img>
+                    </BuildImage>
+                    <BuildSpecs>
+                      <ul>
+                        <li>{item.cpu}</li>
+                        <li>{item.ram}</li>
+                        <li>{item.gpu}</li>
+                      </ul>
+                    </BuildSpecs>
+                    <StyleButtonDiv>
+                      <Links to={item.link}>
+                        <input type="button" value="View Product" className="btn-build"></input>
+                      </Links>
+                      <input type="button" value="Add to Cart" className="btn-cart"></input>
+                    </StyleButtonDiv>
+                  </BuildBox>
+                );
+              }
+            })}
+          </BuildList>
+        </BuildContainer>
+      </LandingContainer>
     </>
   );
 }

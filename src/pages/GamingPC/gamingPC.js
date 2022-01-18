@@ -4,76 +4,45 @@ import intelPc from "assets/img/intelGaming-pc.jpg";
 //Page CSS
 import {
   GamingContainer,
-  GamingpcList,
-  GamingpcBox,
-  ImageContainer,
-  GamingpcSpecs,
-  ButtonContainer,
-  Links
+  StyleRyzenBuild,
+  StyleIntelBuilds,
+  StyleButtonDiv,
+  Links,
 } from "./gamingPCstyle";
 
 //Product List
-import { gamingPCs } from "pages/StoreData/gamingPc";
 
 function gamingPC() {
   return (
     <GamingContainer>
-      <GamingpcList>
-        {gamingPCs.map((item, index) => {
-          const cpu = item.tag;
-          if(cpu === "ryzen"){
-            return (
-            <GamingpcBox>
-              <ImageContainer>
-                <img
-                  src={item.imgSrc}
-                  alt="Ryzen Gaming Builds"
-                  className="ryzenUnits"
-                />
-              </ImageContainer>
-              <GamingpcSpecs>
-               <ul>
-                 <li>{item.cpu}</li>
-                 <li>{item.ram}</li>
-                 <li>{item.gpu}</li>
-               </ul>
-              </GamingpcSpecs>
-              <ButtonContainer>
-                <input type="button" value="Add to Cart" className="btn-cart"></input>
-                <Links to="/viewProduct">
-                <input type="button" value="View Product" className="btn-prod"></input>
-                </Links>
-              </ButtonContainer>
-            </GamingpcBox>
-          );
-          }else{
-            return (
-            <GamingpcBox>
-              <ImageContainer>
-                <img
-                  src={item.imgSrc}
-                  alt="Intel Gaming Build"
-                  className="intelUnits"
-                />
-              </ImageContainer>
-              <GamingpcSpecs>
-               <ul>
-                 <li>{item.cpu}</li>
-                 <li>{item.ram}</li>
-                 <li>{item.gpu}</li>
-               </ul>
-              </GamingpcSpecs>
-              <ButtonContainer>
-                <input type="button" value="Add to Cart" className="btn-cart"></input>
-                <Links to="/viewProduct1">
-                <input type="button" value="View Product" className="btn-prod"></input>
-                </Links>
-              </ButtonContainer>
-            </GamingpcBox>
-          );
-          }
-        })}
-      </GamingpcList>
+      <StyleRyzenBuild>
+        <h1>Boost your productivity with our Ryzen PC Builds</h1>
+        <Links to="/ryzenPage">
+          <StyleButtonDiv>
+            <input
+              type="button"
+              className="btn-build"
+              value="View All Ryzen Builds"
+            ></input>
+          </StyleButtonDiv>
+        </Links>
+      </StyleRyzenBuild>
+
+      <StyleIntelBuilds>
+        <h1>
+          Enhance your gaming experience with the latest Intel CPU'S View All
+          Intel Builds
+        </h1>
+        <Links to="/intelPage">
+          <StyleButtonDiv>
+            <input
+              type="button"
+              className="btn-build"
+              value="View All Intel Builds"
+            ></input>
+          </StyleButtonDiv>
+        </Links>
+      </StyleIntelBuilds>
     </GamingContainer>
   );
 }

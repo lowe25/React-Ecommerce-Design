@@ -1,61 +1,52 @@
 import styled from "styled-components";
-
 import {Link} from "react-router-dom";
+//PC Images
+import ryzenImage from "assets/img/ryzen-cpu.jpg";
+import intelImage from "assets/img/intel-cpu.jpg";
 export const GamingContainer = styled.div`
-  min-height: 664px;
-  padding: 20px;
-`;
-
-export const GamingpcList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: center;
-  gap: 30px;
-`;
-
-export const GamingpcBox = styled.div`
-  min-height: 420px;
-  width: 350px;
-  border: 1px solid black;
-  padding: 15px;
-`;
-
-export const ImageContainer = styled.div`
-  display: grid;
-  justify-content: center;
-  .ryzenUnits,
-.intelUnits {
-    height: 230px;
-  }
-`;
-
-export const GamingpcSpecs = styled.div`
-  text-align: center;
-  padding: 20px;
-  ul {
-    display:grid;
-    justify-content:center;
-    gap:8px;
-    list-style: none;
-    margin: 0 auto;
+  h1 {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
     text-align: center;
   }
 `;
 
-export const ButtonContainer = styled.div`
-display:grid;
-justify-content:center;
-gap:10px;
-.btn-cart,
-.btn-prod{
-  height:30px;
-  width:110px;
-  cursor:pointer;
-}
-`
+export const StyleRyzenBuild = styled.div`
+  position: relative;
+  height: 500px;
+  background: url(${ryzenImage});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
 
+export const StyleIntelBuilds = styled.div`
+  position: relative;
+  height: 500px;
+  background: url(${intelImage});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
 export const Links = styled(Link)`
 text-decoration:none;
 `
+
+export const StyleButtonDiv = styled.div`
+  display: grid;
+  justify-content: center;
+  position: relative;
+  top: 60%;
+  .btn-build {
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    border:none;
+  }
+`;
 
 

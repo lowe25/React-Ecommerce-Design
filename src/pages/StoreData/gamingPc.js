@@ -7,21 +7,26 @@ export const gamingPCs = [
     cpu: "Ryzen 5 3600",
     ram: "8GB Hyperx 3200Mhz",
     gpu: "Nvidia GeForce 1660 4GB",
-    tag:"ryzen"
+    tag:"ryzen",
+    link:"/viewProduct"
+    
   },
   {
     imgSrc: ryzenPc,
     cpu: "Ryzen 5 3600x",
     ram: "16GB Hyperx 3200Mhz",
     gpu: "Nvidia GeForce 1660TI 4GB",
-    tag:"ryzen"
+    tag:"ryzen",
+    link:"/viewProduct"
   },
   {
     imgSrc: ryzenPc,
     cpu: "Ryzen 5 5600x",
     ram: "16GB Hyperx 3200Mhz",
     gpu: "Geforce RTX 2060 8GB",
-    tag:"ryzen"
+    tag:"ryzen",
+    link:"/viewProduct"
+    
   },
   {
       imgSrc: intelPc,

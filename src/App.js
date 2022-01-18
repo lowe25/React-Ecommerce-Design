@@ -18,6 +18,7 @@ import ViewIntel from "pages/ViewProduct/ViewProductIntel";
 import MyAccount from "pages/MyAccount/myAccount";
 import IntelPage from "pages/BuildPage/intelPage";
 import ryzenPage from  "pages/BuildPage/ryzenBuild";
+import laptopPage from "pages/ViewProduct/ViewLaptop";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
          <Route path="/ryzenPage" component={ryzenPage} />
          <Route path="/viewProduct" component={ViewRyzen} />
          <Route path="/viewProduct1" component={ViewIntel} />
+         <Route path="/viewLaptop" component={laptopPage} />
        </Switch>
      </BrowserRouter>
      <Footer />
