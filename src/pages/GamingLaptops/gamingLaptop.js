@@ -38,7 +38,7 @@ function gamingLaptop() {
                     className="btn-addCart"
                     value="Add to Cart"
                   ></input>
-                 <Links to="/viewLaptop">
+                 <Links to={item.link}>
                  <input
                     type="button"
                     className="btn-viewProd"

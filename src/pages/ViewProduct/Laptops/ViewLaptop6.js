@@ -7,18 +7,19 @@ import {
     ProductButtons,
     ProductInfo,
     ColorContainer,
-  } from "./ViewProductStyle";
-  import ryzenPc from "assets/img/intelGaming-pc.jpg";
+  } from "../ViewProductStyle";
+  import acerLaptop from "assets/img/acerLaptop.png";
+
   function ViewLaptop() {
     return (
       <ProductDetailsContainer>
         <ProductContainer>
           <ProductPicture>
-            <img src={ryzenPc} alt="Gaming Pc Pic" className="prod-img"></img>
+            <img src={acerLaptop} alt="Gaming Pc Pic" className="prod-img"></img>
           </ProductPicture>
           <ProductOrder>
             <label>
-              <p>Starter PC</p>
+            <p>Acer Nitro 5</p>
             </label>
             <label>
               <p>Price: $1,600</p>
@@ -61,39 +62,47 @@ import {
           <table className="product-specs">
             <tr>
               <td>Processor:</td>
-              <td>Intel I9 11900K</td>
-            </tr>
-  
-            <tr>
-              <td>Motherboard:</td>
-              <td>B550 ATX Motherboard</td>
+              <td>Intel® Core™ i7-11800H</td>
             </tr>
   
             <tr>
               <td>RAM:</td>
-              <td>Hyperx 16GB (2x8GB) 3200MHz (max speed)</td>
-            </tr>
-  
-            <tr>
-              <td>GPU:</td>
-              <td>Nvidia GeForce RTX 3080Ti</td>
+              <td>16GB DDR4 3200Mhz</td>
             </tr>
   
             <tr>
               <td>Storage:</td>
-              <td>1TB NVMe M.2 SSD</td>
+              <td>500 GB PCIe SSD</td>
             </tr>
+  
             <tr>
-              <td>Power Supply:</td>
-              <td>650W Bronze</td>
+              <td>GPU:</td>
+              <td>NVIDIA® GeForce RTX™ 3050 Ti</td>
             </tr>
-            <tr>
-              <td>Case:</td>
-              <td>NZXT H510</td>
-            </tr>
+  
             <tr>
               <td>Operating System:</td>
               <td>Windows 10</td>
+            </tr>
+            <tr>
+              <td>Camera:</td>
+              <td>720P HD camera</td>
+            </tr>
+            <tr>
+              <td>Port:</td>
+              <td>1x 3.5mm Combo Audio Jack, 1x HDMI 2.0, 1x USB 2.0 Type-A</td>
+            </tr>
+            <tr>
+              <td>Wifi:</td>
+              <td>Wi-Fi 5 (802.11ac)+Bluetooth 5.0 (Dual band) 2*2;(*BT version may change with OS upgrades.)</td>
+            </tr>
+            <tr>
+              <td>Battery:</td>
+              <td>48WHrs, 3S1P, 3-cell Li-ion</td>
+            </tr>
+            <tr>
+              <td>Weight:</td>
+              <td>2.20 Kg (4.85 lbs)</td>
             </tr>
           </table>
         </ProductInfo>

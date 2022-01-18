@@ -14,9 +14,10 @@ import gamingPeriperals from 'pages/GamingPeriperals/gamingPeriperals';
 import CartPage from "pages/CartPage/cartPage";
 import CheckoutPage from "pages/CheckoutPage/checkoutPage";
 import MyAccount from "pages/MyAccount/myAccount";
+
 import IntelPage from "pages/BuildPage/intelPage";
 import ryzenPage from  "pages/BuildPage/ryzenBuild";
-import laptopPage from "pages/ViewProduct/ViewLaptop";
+import laptopPage from "pages/ViewProduct/Laptops/ViewLaptop1";
 
 //Ryzen Units
 import ryzenUnit1 from "pages/ViewProduct/RyzenBuilds/ViewProductRyzen1";
@@ -35,6 +36,21 @@ import intelUnit5 from "pages/ViewProduct/IntelBuilds/ViewProductIntel5";
 import intelUnit6 from "pages/ViewProduct/IntelBuilds/ViewProductIntel6";
 import intelUnit7 from "pages/ViewProduct/IntelBuilds/ViewProductIntel7";
 
+//Laptops
+import laptop1 from "pages/ViewProduct/Laptops/ViewLaptop1";
+import laptop2 from "pages/ViewProduct/Laptops/ViewLaptop2";
+import laptop3 from "pages/ViewProduct/Laptops/ViewLaptop3";
+import laptop4 from "pages/ViewProduct/Laptops/ViewLaptop4";
+import laptop5 from "pages/ViewProduct/Laptops/ViewLaptop5";
+import laptop6 from "pages/ViewProduct/Laptops/ViewLaptop6";
+import laptop7 from "pages/ViewProduct/Laptops/ViewLaptop7";
+import laptop8 from "pages/ViewProduct/Laptops/ViewLaptop8";
+import laptop9 from "pages/ViewProduct/Laptops/ViewLaptop9";
+import laptop10 from "pages/ViewProduct/Laptops/ViewLaptop10";
+import laptop11 from "pages/ViewProduct/Laptops/ViewLaptop11";
+
+//Periperals
+
 function App() {
   return (
     <div className="App">
@@ -49,6 +65,7 @@ function App() {
          <Route path="/myAccount" component={MyAccount} />
          <Route path="/checkoutpage" component={CheckoutPage} />
          <Route path="/cartpage" component={CartPage} />
+
          <Route path="/intelPage" component={IntelPage} />
          <Route path="/ryzenPage" component={ryzenPage} />
          <Route path="/viewLaptop" component={laptopPage} />
@@ -68,7 +85,17 @@ function App() {
          <Route path="/viewIntel6" component={intelUnit6} />
          <Route path="/viewIntel7" component={intelUnit7} />
 
-
+         <Route path="/viewLaptop1" component={laptop1} />
+         <Route path="/viewLaptop2" component={laptop2} />
+         <Route path="/viewLaptop3" component={laptop3} />
+         <Route path="/viewLaptop4" component={laptop4} />
+         <Route path="/viewLaptop5" component={laptop5} />
+         <Route path="/viewLaptop6" component={laptop6} />
+         <Route path="/viewLaptop7" component={laptop7} />
+         <Route path="/viewLaptop8" component={laptop8} />
+         <Route path="/viewLaptop9" component={laptop9} />
+         <Route path="/viewLaptop10" component={laptop10} />
+         <Route path="/viewLaptop11" component={laptop11} />
        </Switch>
      </BrowserRouter>
      <Footer />
