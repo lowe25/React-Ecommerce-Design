@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom";
+
+export const Links = styled(Link)`
+text-decoration:none;
+`
 export const ProductContainer = styled.div`
   min-height: 632px;
   padding: 20px;

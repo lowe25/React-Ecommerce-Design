@@ -1,4 +1,4 @@
-import { ProductContainer, ProductBuilds, ProductBox, ButtonContainer } from "./buildStyle";
+import { ProductContainer, ProductBuilds, ProductBox, ButtonContainer,Links } from "./buildStyle";
 import { ryzenSpecs } from "pages/StoreData/ryzenbuild";
 import ryzenPc from "assets/img/ryzenGaming-pc.jpg";
 function ryzenPage() {
@@ -23,7 +23,9 @@ function ryzenPage() {
                   <p>{item.ram}</p>
                 </div>
                 <ButtonContainer>
-                  <input type="button" value="View Product" className="btn-prod"></input>
+                <Links to={item.link}>
+                <input type="button" value="View Product" className="btn-prod"></input>
+                </Links>
                   <input type="button" value="Add To Cart" className="btn-addCart"></input>
                 </ButtonContainer>
               </ProductBox>

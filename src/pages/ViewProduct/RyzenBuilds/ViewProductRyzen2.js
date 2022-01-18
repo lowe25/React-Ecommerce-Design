@@ -7,7 +7,7 @@ import {
   ProductButtons,
   ProductInfo,
   ColorContainer,
-} from "./ViewProductStyle";
+} from "../ViewProductStyle";
 import ryzenPc from "assets/img/ryzenGaming-pc.jpg";
 function ProductDetails() {
   return (
@@ -56,7 +56,7 @@ function ProductDetails() {
       <table className="product-specs">
           <tr>
             <td>Processor:</td>
-            <td>Ryzen 9 5900X CPU</td>
+            <td>Ryzen 5 3600x</td>
           </tr>
 
           <tr>
@@ -71,12 +71,12 @@ function ProductDetails() {
 
           <tr>
             <td>GPU:</td>
-            <td>Nvidia GeForce RTX 3080Ti</td>
+            <td>Nvidia GeForce 1660TI 4GB</td>
           </tr>
 
           <tr>
             <td>Storage:</td>
-            <td>1TB NVMe M.2 SSD</td>
+            <td>1TB HDD</td>
           </tr>
           <tr>
             <td>Power Supply:</td>
