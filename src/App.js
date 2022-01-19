@@ -50,6 +50,23 @@ import laptop10 from "pages/ViewProduct/Laptops/ViewLaptop10";
 import laptop11 from "pages/ViewProduct/Laptops/ViewLaptop11";
 
 //Periperals
+//Mouse
+import mouse1 from "pages/ViewProduct/Periperals/Mouse/ViewMouse1";
+import mouse2 from "pages/ViewProduct/Periperals/Mouse/ViewMouse2";
+import mouse3 from "pages/ViewProduct/Periperals/Mouse/ViewMouse3";
+import mouse4 from "pages/ViewProduct/Periperals/Mouse/ViewMouse4";
+
+//Headset
+import headset1 from "pages/ViewProduct/Periperals/Headset/ViewHeadset1";
+import headset2 from "pages/ViewProduct/Periperals/Headset/ViewHeadset2";
+import headset3 from "pages/ViewProduct/Periperals/Headset/ViewHeadset3";
+import headset4 from "pages/ViewProduct/Periperals/Headset/ViewHeadset4";
+
+//Keyboard
+import keyboard1 from "pages/ViewProduct/Periperals/Keyboard/ViewKeyboard1";
+import keyboard2 from "pages/ViewProduct/Periperals/Keyboard/ViewKeyboard2";
+import keyboard3 from "pages/ViewProduct/Periperals/Keyboard/ViewKeyboard3";
+import keyboard4 from "pages/ViewProduct/Periperals/Keyboard/ViewKeyboard4";
 
 function App() {
   return (
@@ -58,6 +75,7 @@ function App() {
      <BrowserRouter>
      <Navbar />
        <Switch>
+          {/**Navbar Route */}
          <Route path="/" component={Landing} exact />
          <Route path="/gamingpc" component={gamingPC} />
          <Route path="/gaminglaptop" component={gamingLaptop} />
@@ -70,6 +88,7 @@ function App() {
          <Route path="/ryzenPage" component={ryzenPage} />
          <Route path="/viewLaptop" component={laptopPage} />
 
+        {/**Ryzen Build Route */}
          <Route path="/viewRyzen1" component={ryzenUnit1} />
          <Route path="/viewRyzen2" component={ryzenUnit2} />
          <Route path="/viewRyzen3" component={ryzenUnit3} />
@@ -77,14 +96,16 @@ function App() {
          <Route path="/viewRyzen5" component={ryzenUnit5} />
          <Route path="/viewRyzen6" component={ryzenUnit6} />
 
+        {/**Intel Build Route */}
          <Route path="/viewIntel1" component={intelUnit1} />
          <Route path="/viewIntel2" component={intelUnit2} />
          <Route path="/viewIntel3" component={intelUnit3} />
          <Route path="/viewIntel4" component={intelUnit4} />
          <Route path="/viewIntel5" component={intelUnit5} />
          <Route path="/viewIntel6" component={intelUnit6} />
-         <Route path="/viewIntel7" component={intelUnit7} />
+         <Route path="/viewIntel7" componnt={intelUnit7} />
 
+        {/**Laptatp Route */}
          <Route path="/viewLaptop1" component={laptop1} />
          <Route path="/viewLaptop2" component={laptop2} />
          <Route path="/viewLaptop3" component={laptop3} />
@@ -96,6 +117,24 @@ function App() {
          <Route path="/viewLaptop9" component={laptop9} />
          <Route path="/viewLaptop10" component={laptop10} />
          <Route path="/viewLaptop11" component={laptop11} />
+
+        {/**Mouse Route*/}
+         <Route path="/viewMouse1" component={mouse1} />
+         <Route path="/viewMouse2" component={mouse2} />
+         <Route path="/viewMouse3" component={mouse3} />
+         <Route path="/viewMouse4" component={mouse4} />
+         
+        {/**Headset Route*/}
+        <Route path="/viewHeadset1" component={headset1} />
+        <Route path="/viewHeadset2" component={headset2} />
+        <Route path="/viewHeadset3" component={headset3} />
+        <Route path="/viewHeadset4" component={headset4} />
+
+        {/**Keyboard Route*/}
+        <Route path="/viewKeyboard1" component={keyboard1} />
+        <Route path="/viewKeyboard2" component={keyboard2} />
+        <Route path="/viewKeyboard3" component={keyboard3} />
+        <Route path="/viewKeyboard4" component={keyboard4} />
        </Switch>
      </BrowserRouter>
      <Footer />
