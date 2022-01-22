@@ -55,6 +55,7 @@ export const QuantityContainer = styled.div`
   }
 `;
 
+//Add to cart/Checkout button container
 export const ProductButtons = styled.div`
   padding-top: 15px;
   display: grid;
@@ -67,6 +68,7 @@ export const ProductButtons = styled.div`
   }
 `;
 
+//Table
 export const ProductInfo = styled.div`
   display: flex;
   justift-content: center;

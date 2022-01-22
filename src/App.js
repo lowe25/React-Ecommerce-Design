@@ -6,7 +6,7 @@ import GlobalStyle from "GlobalStyle";
 import Navbar from 'components/navbar/navbar';
 import Footer from 'components/footer/footer';
 
-//Components
+//Pages
 import Landing from "pages/Landing/Landing";
 import gamingPC from 'pages/GamingPC/gamingPC';
 import gamingLaptop from 'pages/GamingLaptops/gamingLaptop';
@@ -18,6 +18,8 @@ import MyAccount from "pages/MyAccount/myAccount";
 import IntelPage from "pages/BuildPage/intelPage";
 import ryzenPage from  "pages/BuildPage/ryzenBuild";
 import laptopPage from "pages/ViewProduct/Laptops/ViewLaptop1";
+import payment from "pages/Payment/Payment";
+
 
 //Ryzen Units
 import ryzenUnit1 from "pages/ViewProduct/RyzenBuilds/ViewProductRyzen1";
@@ -83,10 +85,11 @@ function App() {
          <Route path="/myAccount" component={MyAccount} />
          <Route path="/checkoutpage" component={CheckoutPage} />
          <Route path="/cartpage" component={CartPage} />
-
+ 
          <Route path="/intelPage" component={IntelPage} />
          <Route path="/ryzenPage" component={ryzenPage} />
          <Route path="/viewLaptop" component={laptopPage} />
+         <Route path="/payment" component={payment} />
 
         {/**Ryzen Build Route */}
          <Route path="/viewRyzen1" component={ryzenUnit1} />
