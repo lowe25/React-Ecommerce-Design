@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const AccesibilityContainer = styled.div`
   display: flex;
-  margin-left:11px;
-  padding:10px;
+  margin-left:8px;
   gap:5px;
+  
 `;
 
 const MyAccountButton = styled.button`
@@ -15,6 +15,7 @@ const MyAccountButton = styled.button`
   font-size: 14px;
   background-color:#262626;
   cursor:pointer;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 `;
 
 const CartButton = styled.button`
@@ -26,6 +27,7 @@ const CartButton = styled.button`
   font-size: 14px;
   background-color:#262626;
   cursor:pointer;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 `;
 
 export function Accessibility(props) {

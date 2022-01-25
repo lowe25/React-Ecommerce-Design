@@ -4,6 +4,8 @@ export const FooterContainer = styled.footer`
   color: #FFFFFF;
   background-color: #000000;
   padding:50px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size:14px;
 `;
 
 export const FooterListContainer = styled.div`
@@ -25,4 +27,18 @@ margin:10px;
 `
 
 export const EmailDiv = styled.div`
+}
+`
+
+export const EmailBtnCon =styled.div`
+.txt-email{
+  height:30px;
+}
+.btn-submit{
+  width:60px;
+  cursor:pointer;
+}
+display:flex;
+gap:10px;
+padding-top:10px;
 `

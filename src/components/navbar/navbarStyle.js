@@ -15,6 +15,7 @@ const NavbarContainer = styled.div`
   align-items: center;
   padding: 0 1.5em;
   background-color:#262626;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 `;
 
 const LeftSection = styled.div`

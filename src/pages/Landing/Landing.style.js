@@ -10,6 +10,7 @@ export const Links = styled(Link)`
   text-decoration: none;
 `;
 export const LandingContainer = styled.div`
+
   h1 {
     color: #ffffff;
     position: absolute;
@@ -17,6 +18,8 @@ export const LandingContainer = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
   }
 `;
 export const StyleLanding = styled.div`
@@ -55,6 +58,7 @@ export const BuildImage = styled.div`
 
 export const BuildSpecs = styled.div`
   padding: 12px;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   ul {
     display: grid;
     justify-content: center;
@@ -74,5 +78,7 @@ export const StyleButtonDiv = styled.div`
     cursor: pointer;
     height: 30px;
     width: 100px;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-weight:bold;
   }
 `;

@@ -5,6 +5,7 @@ import {
   FooterListSocial,
   ListValues,
   EmailDiv,
+  EmailBtnCon,
 } from "./footerStyle";
 function Footer() {
   return (
@@ -53,14 +54,16 @@ function Footer() {
 
           <EmailDiv>
             <FooterListSocial>
-              <ListValues>Facebook</ListValues>
-              <ListValues>Instagram</ListValues>
-              <ListValues>Twitter</ListValues>
-              <ListValues>Youtube</ListValues>
+              <ListValues><i class="fab fa-facebook fa-lg"></i></ListValues>
+              <ListValues><i class="fab fa-instagram fa-lg"></i></ListValues>
+              <ListValues><i class="fab fa-twitter fa-lg"></i></ListValues>
+              <ListValues><i class="fab fa-youtube fa-lg"></i></ListValues>
             </FooterListSocial>
             <p>Recieve our Newsletter</p>
-            <input type="text" placeholder="Email"></input>
-            <input type="submit" value="Submit"></input>
+            <EmailBtnCon>
+            <input type="text" placeholder="Email" className="txt-email"></input>
+            <input type="submit" value="Submit" className="btn-submit"></input>
+            </EmailBtnCon>
           </EmailDiv>
         </FooterListContainer>
       </FooterContainer>

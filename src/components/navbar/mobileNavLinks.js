@@ -7,18 +7,19 @@ const NavLinksContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  padding-top:5px;
 `;
 
 const LinkWrapper = styled.ul`
   margin: 0;
-  padding:0;
+  padding:10px;
   display: flex;
   list-style: none;
-  background-color: green;
+  background-color:#262626;
   width: 100%;
   flex-direction: column;
   position: fixed;
-  top: 65px;
+  top: 50px;
   left: 0;
   z-index:1;
 `;
@@ -40,6 +41,7 @@ const LinkItem = styled.li`
 `;
 const Links = styled(Link)`
   text-decoration: none;
+  color:#FFFFFF;
 `;
 export function MobileNavLinks(props) {
   const [isOpen, setOpen] = useState(false); 
