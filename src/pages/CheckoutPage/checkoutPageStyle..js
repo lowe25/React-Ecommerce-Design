@@ -6,14 +6,14 @@ export const Links = styled(Link)`
 `;
 
 export const CheckoutContainer = styled.div`
-    min-height: 640px;
+  min-height: 640px;
   display: grid;
   align-items: center;
 `;
 
 export const CheckoutMain = styled.div`
-position:relative;
-top:-4%;
+  position: relative;
+  top: -4%;
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: center;
@@ -23,7 +23,7 @@ top:-4%;
 export const ContactInfo = styled.div`
   display: grid;
   grid-template-columns: repeat(1, auto);
-  gap:18px;
+  gap: 18px;
   .txtFname,
   .txtLname {
     height: 40px;
@@ -34,7 +34,7 @@ export const ContactInfo = styled.div`
   .txtApt,
   .txtCity {
     height: 40px;
-    width:550px;
+    width: 550px;
   }
 `;
 
@@ -49,15 +49,14 @@ export const ButtonContainer = styled.div`
   gap: 10px;
   .btn-cart,
   .btn-checkout {
-    height: 32px;
-    width: 150px;
+    height: 40px;
+    width: 230px;
     cursor: pointer;
   }
 `;
-
 //2nd Column
 export const ProductContainer = styled.div`
-position:relative;
+  position: relative;
   .prod {
     height: 100px;
     .prod-total {
@@ -70,31 +69,33 @@ position:relative;
 `;
 
 export const Discount = styled.div`
-label{
-  display:flex;
-  gap:10px;
-}
-padding-bottom:25px;
+  label {
+    display: flex;
+    gap: 10px;
+  }
+  padding-bottom: 25px;
 `;
+
 export const PaymentMethodContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(1, auto);
-  position:relative;
-  top:-18%;
+  position: relative;
+  top: -18%;
   .btn-apply {
     cursor: pointer;
     height: 40px;
     width: 290px;
   }
-  .discountCode{
+  .discountCode {
     height: 40px;
     width: 290px;
   }
 `;
+
 export const Total = styled.div`
   .cart-total {
     position: relative;
-    top:-30%;
+    top: -30%;
     width: 100%;
     td {
       padding: 5px;

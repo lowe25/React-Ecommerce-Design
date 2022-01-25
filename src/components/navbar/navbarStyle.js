@@ -1,43 +1,51 @@
-import { NavLink } from "react-router-dom";
+//React
 import styled from "styled-components";
+import { useMediaQuery } from "react-responsive";
+//
+import { NavLinks } from "./navLinks";
+import { Logo } from "./navLogo";
+import { Accessibility } from "./accesibility";
+import { DeviceSize } from "mediaQuerie/mediaQueries";
+import { MobileNavLinks } from "./mobileNavLinks";
 
-export const NavLogo = styled.h1`
-font-size:20px;
-text-decoration: none;
-color:white;
-
-`
-export const NavContainer = styled.nav`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 55px;
-  background-color: #262626;
-  color: white;
-  z-index: -1;
-`
-export const NavMenu = styled.ul`
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
+const NavbarContainer = styled.div`
   width: 100%;
-  padding: 20px;
-  color: white;
-`
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5em;
+  background-color:#262626;
+`;
 
-export const NavList = styled.li`
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  margin: 0 10px;
-  cursor: pointer;
-  color: white;
-`
-export const NavLinks = styled(NavLink)`
-text-decoration:none;
-`
+const LeftSection = styled.div`
+  display: flex;
+`;
 
-export const NavMiddle = styled.div`
-`
-export const NavRight =styled.div`
-`
+const MiddleSection = styled.div`
+  display: flex;
+  flex: 2;
+  height: 100%;
+  justify-content: center;
+`;
+
+const RightSection = styled.div`
+  display: flex;
+`;
+
+export function Navbar1(props) {
+  const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobileSmall });
+  return (
+    <NavbarContainer>
+      <LeftSection>
+        <Logo />
+      </LeftSection>
+      <MiddleSection>
+        {!isMobile && <NavLinks />}
+      </MiddleSection>
+      <RightSection>
+        {!isMobile && <Accessibility />}
+        {isMobile && <MobileNavLinks/>}
+      </RightSection>
+    </NavbarContainer>
+  );
+}
