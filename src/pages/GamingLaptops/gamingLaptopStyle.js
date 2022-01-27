@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
+import { DeviceSize } from "mediaQuerie/mediaQueries";
+
 export const GamingLaptopContainer = styled.div`
   min-height: 500px;
   padding: 20px;
@@ -12,6 +14,16 @@ export const LaptopList = styled.div`
   grid-template-columns: repeat(3, auto);
   justify-content: center;
   gap: 30px;
+  @media(max-width:${DeviceSize["tablet-xsm"]}){
+    grid-template-columns: repeat(1, auto);
+  }
+  @media(min-width:${DeviceSize["tablet-sm"]}) and  (max-width:${DeviceSize["tablet-md"]}){
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @media(min-width:${DeviceSize["tablet-lg"]}) and  (max-width:${DeviceSize["screen-lg"]}){
+    grid-template-columns: repeat(2, auto);
+  }
 `;
 export const LaptopBox = styled.div`
   border: 1px solid black;

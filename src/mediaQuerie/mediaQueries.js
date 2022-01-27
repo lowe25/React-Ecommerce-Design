@@ -24,8 +24,11 @@ export const DeviceSize= {
    "mobile-lg": "481px",
    "tablet-xsm":"767px",
    "tablet-sm": "768px",
+   "tablet-md1": "839px",
    "tablet-md": "1024px",
    "tablet-lg": "1025px",
+   "tablet-lg1": "1026px",
    "screen-lg":"1270px",
    "screen-xl":"1418px",
+   "screen-xxl": "1699px"
 };
