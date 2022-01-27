@@ -4,6 +4,8 @@ export const ProductDetailsContainer = styled.div`
   min-height: 631.5px;
 `;
 export const ProductContainer = styled.div`
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+
   height: 450px;
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -65,11 +67,14 @@ export const ProductButtons = styled.div`
   .btn-checkout {
     height: 30px;
     cursor: pointer;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+
   }
 `;
 
 //Table
 export const ProductInfo = styled.div`
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   display: flex;
   justift-content: center;
   padding: 10px;
@@ -82,9 +87,9 @@ export const ProductInfo = styled.div`
   td,
   th {
     border-bottom: 1px solid black;
-        padding: 8px;
-        text-align: left;
-        width: 500px;
-        font-weight: normal;
+    padding: 8px;
+    text-align: left;
+    width: 500px;
+    font-weight: normal;
   }
 `;

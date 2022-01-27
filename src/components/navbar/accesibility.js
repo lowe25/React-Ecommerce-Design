@@ -1,10 +1,9 @@
 import styled from "styled-components";
-
+import { LinkItem, Links } from "./navLinks";
 const AccesibilityContainer = styled.div`
   display: flex;
-  margin-left:8px;
-  gap:5px;
-  
+  margin-left: 8px;
+  gap: 5px;
 `;
 
 const MyAccountButton = styled.button`
@@ -13,9 +12,9 @@ const MyAccountButton = styled.button`
   padding: 8px 1em;
   color: white;
   font-size: 14px;
-  background-color:#262626;
-  cursor:pointer;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background-color: #262626;
+  cursor: pointer;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 `;
 
 const CartButton = styled.button`
@@ -25,16 +24,24 @@ const CartButton = styled.button`
   color: white;
   font-size: 16px;
   font-size: 14px;
-  background-color:#262626;
-  cursor:pointer;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background-color: #262626;
+  cursor: pointer;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 `;
 
 export function Accessibility(props) {
   return (
     <AccesibilityContainer>
-      <MyAccountButton>MyAccount</MyAccountButton>
-      <CartButton>Cart</CartButton>
+      <LinkItem>
+        <Links to="/myAccount">
+          <MyAccountButton>MyAccount</MyAccountButton>
+        </Links>
+      </LinkItem>
+      <LinkItem>
+        <Links to="/cartpage">
+          <CartButton>Cart</CartButton>
+        </Links>
+      </LinkItem>
     </AccesibilityContainer>
   );
 }

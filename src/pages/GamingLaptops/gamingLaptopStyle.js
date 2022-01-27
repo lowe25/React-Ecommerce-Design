@@ -29,6 +29,8 @@ export const GamingLaptopImage = styled.div`
 `;
 
 export const LaptopSpecs = styled.div`
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+
   ul {
     list-style: none;
     display: grid;
@@ -46,6 +48,7 @@ export const ButtonContainer = styled.div`
   padding: 15px;
   .btn-addCart,
   .btn-viewProd {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
     height: 30px;
     width: 120px;
     cursor:pointer;

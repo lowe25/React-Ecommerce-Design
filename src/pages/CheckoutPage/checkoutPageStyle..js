@@ -9,6 +9,7 @@ export const CheckoutContainer = styled.div`
   min-height: 640px;
   display: grid;
   align-items: center;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
 `;
 
 export const CheckoutMain = styled.div`
@@ -49,6 +50,7 @@ export const ButtonContainer = styled.div`
   gap: 10px;
   .btn-cart,
   .btn-checkout {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
     height: 40px;
     width: 230px;
     cursor: pointer;
@@ -85,6 +87,7 @@ export const PaymentMethodContainer = styled.div`
     cursor: pointer;
     height: 40px;
     width: 290px;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
   }
   .discountCode {
     height: 40px;

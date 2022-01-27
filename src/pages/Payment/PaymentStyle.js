@@ -10,6 +10,7 @@ export const PaymentContainer = styled.div`
   grid-template-columns: repeat(2, auto);
   justify-content: center;
   gap: 150px;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
 `;
 
 export const Payment = styled.div`
@@ -61,6 +62,7 @@ gap:150px;
 padding-top:20px;
 .btn-return,
 .btn-payment{
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
     height:40px;
     width:230px;
     cursor:pointer;
@@ -84,6 +86,7 @@ export const CartProduct = styled.div`
       height: 40px;
       width: 150px;
       cursor: pointer;
+      font-family: 'Rubik', Arial, Helvetica, sans-serif;
     }
     .txt-discount {
       width: 250px;

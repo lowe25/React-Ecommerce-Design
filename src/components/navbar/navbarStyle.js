@@ -34,7 +34,7 @@ const RightSection = styled.div`
 `;
 
 export function Navbar1(props) {
-  const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobileSmall });
+  const isMobile = useMediaQuery({ maxWidth: DeviceSize["tablet-md"] });
   return (
     <NavbarContainer>
       <LeftSection>

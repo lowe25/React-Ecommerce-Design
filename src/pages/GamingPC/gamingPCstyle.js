@@ -12,6 +12,7 @@ export const GamingContainer = styled.div`
     transform: translate(-50%, -50%);
     margin: 0;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
   }
 `;
 
@@ -46,6 +47,7 @@ export const StyleButtonDiv = styled.div`
     height: 40px;
     width: 200px;
     border:none;
+    font-family: 'Open Sans', sans-serif;
   }
 `;
 

@@ -6,6 +6,7 @@ export const Links = styled(Link)`
 `;
 export const CartContainer = styled.div`
   min-height: 632px;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
 `;
 export const CartProd = styled.div`
   padding: 20px;
@@ -65,6 +66,7 @@ export const CartButtons = styled.div`
   gap: 20px;
   .btn-checkout,
   .btn-shopping {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
     height: 30px;
     width: 120px;
     cursor: pointer;

@@ -15,7 +15,7 @@ const LinkWrapper = styled.ul`
   list-style: none;
 `;
 
-const LinkItem = styled.li`
+export const LinkItem = styled.li`
   height: 100%;
   padding: 0 1.1em;
   color: #FFFFFF;
@@ -30,7 +30,7 @@ const LinkItem = styled.li`
       border-bottom:1px solid green;
   }
 `;
-const Links = styled(Link)`
+export const Links = styled(Link)`
   text-decoration: none;
   color:#FFFFFF;
 `;

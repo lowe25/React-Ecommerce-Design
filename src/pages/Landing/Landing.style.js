@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { DeviceSize } from "mediaQuerie/mediaQueries";
 //React Router
 import { Link } from "react-router-dom";
 //Assets Images
@@ -38,6 +38,17 @@ export const BuildList = styled.div`
   justify-content: center;
   gap: 20px;
   padding: 20px;
+
+  @media(max-width:${DeviceSize["tablet-xsm"]}){
+    grid-template-columns: repeat(1, auto);
+  }
+  @media(min-width:${DeviceSize["tablet-sm"]}) and  (max-width:${DeviceSize["tablet-md"]}){
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @media(min-width:${DeviceSize["tablet-lg"]}) and  (max-width:${DeviceSize["screen-lg"]}){
+    grid-template-columns: repeat(2, auto);
+  }
 `;
 
 export const BuildBox = styled.div`

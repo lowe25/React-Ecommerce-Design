@@ -30,6 +30,7 @@ justify-content:center;
 }
 `
 export const PeriperalsInfo = styled.div`
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
 text-align:center;
 padding:20px;
 ul{
@@ -46,6 +47,7 @@ justify-content:center;
 gap:10px;
 .btn-cart,
 .btn-prod{
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
     height:30px;
     width:120px;
     cursor:pointer;
